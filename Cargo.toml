@@ -1,0 +1,19 @@
+[package]
+name = "cargo-kill"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Save disk space by removing old target directories from your rust projects"
+homepage = "https://github.com/beni69/cargo-kill"
+repository = "https://github.com/beni69/cargo-kill"
+readme = "README.md"
+keywords = ["cargo", "kill"]
+categories = ["command-line-utilities", "development-tools::cargo-plugins"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+clap = { version = "3.1.5", features = ["derive"] }
+dialoguer = "0.10.0"
+log = "0.4.14"
+pretty_env_logger = "0.4.0"
+spinners = "3.0.1"
