@@ -11,5 +11,6 @@ cargo install cargo-kill
 
 ## usage
 ```sh
-cargo kill <search dir>
+cargo-kill <search dir>
 ```
+note: currently running as `cargo kill` doesn't work
