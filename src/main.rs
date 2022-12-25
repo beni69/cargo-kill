@@ -60,7 +60,6 @@ fn main() {
         )
         .interact()
         .unwrap();
-    println!("selected: {:?}", selected);
 
     let sp = Spinner::new(Spinners::Dots, "Deleting directories".into());
     let mut freed = 0u64;
@@ -73,7 +72,7 @@ fn main() {
             freed += target[i].1;
         }
     }
-    sp.stop_with_message(format!("Done! Freed {}\n", size_str(freed)));
+    sp.stop_with_message(format!("\nDone! Freed {}\n", size_str(freed)));
 }
 
 fn dir_size(path: &PathBuf) -> u64 {
