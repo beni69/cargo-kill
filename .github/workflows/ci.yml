@@ -9,6 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: beni69/clippy-action@v0
+      - uses: beni69/clippy-action@8fcb5d2a7c9fa56a91dc1d8400981e3746fc78b8
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
